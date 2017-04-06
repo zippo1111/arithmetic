@@ -29,12 +29,18 @@ class ViewController: UIViewController {
         let b = toNumberValue.text, !b.isEmpty {
             let fromA: Int = Int(a)!
             let toB: Int = Int(b)!
-            let digitsCounter = (toB - fromA) + 1
-            let sum = (fromA + toB) * digitsCounter / 2
-            totalSumResult.text = String(sum) + " "
+            
+            let sumOfPrimeNumbers = (fromA...toB).map { $0 }.filter { isPrime($0) }.reduce(0, +)
+            
+            totalSumResult.text = String(sumOfPrimeNumbers)
             
             self.view.endEditing(true) // Убрать клавиатуру
         }
+    }
+    
+    // "Протестированная формула вычисления простых чисел" (диапазон от 2 до number)
+    func isPrime(_ number: Int) -> Bool {
+        return number > 1 && !(2..<number).contains { number % $0 == 0 }
     }
     
 }
