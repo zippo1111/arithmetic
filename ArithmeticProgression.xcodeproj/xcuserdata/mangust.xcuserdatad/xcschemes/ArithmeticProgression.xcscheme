@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9A05EF331E968F4D008EEEF8"
+               BuildableName = "ArithmeticProgressionTests.xctest"
+               BlueprintName = "ArithmeticProgressionTests"
+               ReferencedContainer = "container:ArithmeticProgression.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

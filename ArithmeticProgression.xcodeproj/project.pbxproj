@@ -12,7 +12,19 @@
 		9A05EF211E95FD68008EEEF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A05EF1F1E95FD68008EEEF8 /* Main.storyboard */; };
 		9A05EF231E95FD68008EEEF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A05EF221E95FD68008EEEF8 /* Assets.xcassets */; };
 		9A05EF261E95FD68008EEEF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A05EF241E95FD68008EEEF8 /* LaunchScreen.storyboard */; };
+		9A05EF3E1E968FA8008EEEF8 /* PrimeNumbersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A05EF2E1E968EEE008EEEF8 /* PrimeNumbersTests.swift */; };
+		9A05EF401E969492008EEEF8 /* ListOfFirst100000Primes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A05EF3F1E969492008EEEF8 /* ListOfFirst100000Primes.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A05EF391E968F4E008EEEF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A05EF101E95FD68008EEEF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A05EF171E95FD68008EEEF8;
+			remoteInfo = ArithmeticProgression;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9A05EF181E95FD68008EEEF8 /* ArithmeticProgression.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArithmeticProgression.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +34,21 @@
 		9A05EF221E95FD68008EEEF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A05EF251E95FD68008EEEF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A05EF271E95FD68008EEEF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A05EF2E1E968EEE008EEEF8 /* PrimeNumbersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PrimeNumbersTests.swift; path = ../ArithmeticProgression/Tests/PrimeNumbersTests.swift; sourceTree = "<group>"; };
+		9A05EF341E968F4D008EEEF8 /* ArithmeticProgressionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArithmeticProgressionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A05EF381E968F4E008EEEF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A05EF3F1E969492008EEEF8 /* ListOfFirst100000Primes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfFirst100000Primes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9A05EF151E95FD68008EEEF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A05EF311E968F4D008EEEF8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				9A05EF1A1E95FD68008EEEF8 /* ArithmeticProgression */,
+				9A05EF351E968F4E008EEEF8 /* ArithmeticProgressionTests */,
 				9A05EF191E95FD68008EEEF8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				9A05EF181E95FD68008EEEF8 /* ArithmeticProgression.app */,
+				9A05EF341E968F4D008EEEF8 /* ArithmeticProgressionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +87,16 @@
 				9A05EF271E95FD68008EEEF8 /* Info.plist */,
 			);
 			path = ArithmeticProgression;
+			sourceTree = "<group>";
+		};
+		9A05EF351E968F4E008EEEF8 /* ArithmeticProgressionTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A05EF2E1E968EEE008EEEF8 /* PrimeNumbersTests.swift */,
+				9A05EF3F1E969492008EEEF8 /* ListOfFirst100000Primes.swift */,
+				9A05EF381E968F4E008EEEF8 /* Info.plist */,
+			);
+			path = ArithmeticProgressionTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +119,24 @@
 			productReference = 9A05EF181E95FD68008EEEF8 /* ArithmeticProgression.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9A05EF331E968F4D008EEEF8 /* ArithmeticProgressionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A05EF3B1E968F4F008EEEF8 /* Build configuration list for PBXNativeTarget "ArithmeticProgressionTests" */;
+			buildPhases = (
+				9A05EF301E968F4D008EEEF8 /* Sources */,
+				9A05EF311E968F4D008EEEF8 /* Frameworks */,
+				9A05EF321E968F4D008EEEF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A05EF3A1E968F4E008EEEF8 /* PBXTargetDependency */,
+			);
+			name = ArithmeticProgressionTests;
+			productName = ArithmeticProgressionTests;
+			productReference = 9A05EF341E968F4D008EEEF8 /* ArithmeticProgressionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -97,6 +150,11 @@
 					9A05EF171E95FD68008EEEF8 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
+					};
+					9A05EF331E968F4D008EEEF8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9A05EF171E95FD68008EEEF8;
 					};
 				};
 			};
@@ -114,6 +172,7 @@
 			projectRoot = "";
 			targets = (
 				9A05EF171E95FD68008EEEF8 /* ArithmeticProgression */,
+				9A05EF331E968F4D008EEEF8 /* ArithmeticProgressionTests */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +188,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9A05EF321E968F4D008EEEF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,7 +207,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9A05EF301E968F4D008EEEF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A05EF401E969492008EEEF8 /* ListOfFirst100000Primes.swift in Sources */,
+				9A05EF3E1E968FA8008EEEF8 /* PrimeNumbersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A05EF3A1E968F4E008EEEF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A05EF171E95FD68008EEEF8 /* ArithmeticProgression */;
+			targetProxy = 9A05EF391E968F4E008EEEF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9A05EF1F1E95FD68008EEEF8 /* Main.storyboard */ = {
@@ -280,6 +363,32 @@
 			};
 			name = Release;
 		};
+		9A05EF3C1E968F4F008EEEF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ArithmeticProgressionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = drew.ArithmeticProgressionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArithmeticProgression.app/ArithmeticProgression";
+			};
+			name = Debug;
+		};
+		9A05EF3D1E968F4F008EEEF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ArithmeticProgressionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = drew.ArithmeticProgressionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArithmeticProgression.app/ArithmeticProgression";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -297,6 +406,14 @@
 			buildConfigurations = (
 				9A05EF2B1E95FD68008EEEF8 /* Debug */,
 				9A05EF2C1E95FD68008EEEF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9A05EF3B1E968F4F008EEEF8 /* Build configuration list for PBXNativeTarget "ArithmeticProgressionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A05EF3C1E968F4F008EEEF8 /* Debug */,
+				9A05EF3D1E968F4F008EEEF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

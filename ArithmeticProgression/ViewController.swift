@@ -33,7 +33,7 @@ class ViewController: UIViewController {
             let sum = (fromA + toB) * digitsCounter / 2
             totalSumResult.text = String(sum) + " "
             
-            self.view.endEditing(true)
+            self.view.endEditing(true) // Убрать клавиатуру
         }
     }
     
