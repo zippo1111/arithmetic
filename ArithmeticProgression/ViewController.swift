@@ -32,6 +32,8 @@ class ViewController: UIViewController {
             let digitsCounter = (toB - fromA) + 1
             let sum = (fromA + toB) * digitsCounter / 2
             totalSumResult.text = String(sum) + " "
+            
+            self.view.endEditing(true)
         }
     }
     
