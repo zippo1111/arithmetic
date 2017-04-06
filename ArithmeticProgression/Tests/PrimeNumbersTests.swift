@@ -24,7 +24,7 @@ class PrimeNumbersTests: XCTestCase {
     
     func testNumberIsPrime_AgainstListOfKnownPrimeNumbers() {
         let findNumber:Int = 101
-        XCTAssertTrue(first100KPrimesList.contains(findNumber), "Искомое число не является простым, т.е. не находится в списке первых 100000 известных простых чисел")
+        XCTAssertTrue(first100KPrimesList.contains(findNumber), "Искомое число является простым, т.е. находится в списке первых 100000 известных простых чисел")
     }
     
     func testNonNumberIsNonPrime_AgainstListOfKnownPrimeNumbers() {
