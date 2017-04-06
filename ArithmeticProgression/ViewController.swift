@@ -29,7 +29,12 @@ class ViewController: UIViewController {
         let b = toNumberValue.text, !b.isEmpty {
             let fromA: Int = Int(a)!
             let toB: Int = Int(b)!
-            
+            /**
+             Порядок вычесления суммы "Простых чисел":
+             //  1) Выборка отдельного элемента - map
+             //  2) Отфильтровывание только "Простых чисел" - filter
+             //  3) Суммирование найденных "Простых чисел" - reduce
+            */
             let sumOfPrimeNumbers = (fromA...toB).map { $0 }.filter { isPrime($0) }.reduce(0, +)
             
             totalSumResult.text = String(sumOfPrimeNumbers)
