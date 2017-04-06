@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var totalSumResult: UILabel!
+    @IBOutlet weak var fromNumberValue: UITextField!
+    @IBOutlet weak var toNumberValue: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +24,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func countSum(_ sender: Any) {
+        if let a = fromNumberValue.text, !a.isEmpty,
+        let b = toNumberValue.text, !b.isEmpty {
+            let fromA: Int = Int(a)!
+            let toB: Int = Int(b)!
+            let digitsCounter = (toB - fromA) + 1
+            let sum = (fromA + toB) * digitsCounter / 2
+            totalSumResult.text = String(sum)
+        }
+    }
+    
 }
 
