@@ -42,7 +42,7 @@ class PrimeNumbersTests: XCTestCase {
         XCTAssertFalse(isPrime(integerEnd), "Данное число - сложное")
     }
     
-    // "FormulaOne" (диапозон от 2 до _ number: Int)
+    // "FormulaOne" (диапазон от 2 до _ number: Int)
     func isPrime(_ number: Int) -> Bool {
         return number > 1 && !(2..<number).contains { number % $0 == 0 }
     }
